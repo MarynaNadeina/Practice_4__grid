@@ -1,0 +1,51 @@
+.title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 60px;
+    color: #000;
+    &_fz12 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    &_fz14 {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &_fz16 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &_fz20 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    &_fz36 {
+        font-size: 36px;
+    }
+    &_fz48 {
+        font-size: 48px;
+    }
+}
+
+.subtitle {
+    position: relative;
+    padding-left: 10px;
+    z-index: 1;
+    @include before_circle;
+}
+
+.section-title_center {
+    @include before_circle;
+    position: relative;
+    &::before {
+        top: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.section-title_left {
+    @include before_circle;
+    position: relative;
+    padding: 1px 0 0 12px;
+}
